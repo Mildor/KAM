@@ -1,0 +1,115 @@
+* {
+    overflow: visible !important;
+}
+
+.signup {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    margin-bottom: 20vh;
+}
+
+.signup form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #31263e;
+    border-radius: 20px;
+    width: 30%;
+    margin-left: 35%;
+    color: azure;
+}
+
+.txtinput {
+    background: none !important;
+    border: none;
+    border-bottom: 3px solid #fff;
+    transition: all 0.5s ease;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.txtinput:focus {
+    background: none !important;
+    outline: none;
+    border-bottom: 3px solid rgb(86, 86, 218);
+}
+
+.txtinput::placeholder {
+    color: rgb(170, 170, 170);
+    font-size: .9em;
+}
+
+h2 {
+    color: #7b5f9b;
+    margin-left: 30%;
+    width: 40%;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.submitbtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submitbtn:hover {
+    transition: all 0.5s ease;
+    background-color: rgb(86, 86, 218);
+}
+
+@media (min-width:700px) and (max-width:1023px) {
+    .signup form {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width:699px) {
+    .signup form {
+        width: 80% !important;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:520px) {
+    .error {
+        left: 20% !important;
+    }
+}
+
+.error {
+    color: rgb(255 0 0);
+    font: bold;
+    font-size: 12px;
+    border-radius: 6px;
+    left: 40%;
+    /* Position the tooltip */
+    position: absolute;
+    transition: all 0.5s ease;
+}
+
+.passinfo {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.253);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.passlab:hover .passinfo {
+    visibility: visible;
+    color: rgb(151, 201, 37);
+    cursor: help;
+}
